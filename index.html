@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submission Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Submit Your Details</h1>
+
+    <form action="#" method="POST" id="submissionForm">
+      <p> 
+        Please fill out the form below to submit your details. All fields are required.
+      </p>
+
+      <label for="name">Full Name with Title </label>
+      <select id="title" name="title" required>
+      <option value="" disabled selected>Select your title</option>
+      <option value="mr">Mr.</option>
+      <option value="ms">Ms.</option>
+      <option value="mrs">Mrs.</option>
+      <option value="dr">Dr.</option>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder= "Email Required" />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="file">Upload File (PDF/DOC)</label>
+      <input type="file" id="file" name="file" accept=".pdf,.doc,.docx,.png" required />
+
+      <label for="message">Message</label>
+        <p>Optional: You can leave a message or additional information here.</p>
+      <textarea id="message" name="message" rows="4" placeholder="Write something..."></textarea>
+
+      <input type="checkbox" id="terms" name="terms" placeholder="I agree to the terms and conditions" required />
+      <label for="terms">I agree to the terms and conditions</label>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
